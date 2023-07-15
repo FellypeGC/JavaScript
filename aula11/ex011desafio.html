@@ -10,16 +10,25 @@
 
     <h1>Escreva seu País abaixo</h1>
     <input type="text" name="país" id="país">
-    <input type="button" value="Verificar" onclick="verificar()">
+    <input type="button" value="Verificar" onclick="verificar()" id="btn">
 
     <div id="res">
-
+        <p>Resultado: </p>
     </div>
 
     <script>
-        function verificar () {
-            
+        function verificar() {
+            var país = document.querySelector('#país'); //Esta variável recebe o nome do país digitado no input
+            var res = document.querySelector('#res'); // Esta variável recebe a div do resultado que o texto irá ser feito por innerHTML
+            var np = país.value.toUpperCase(); // Esta variável recebe o valor da var país, e transforma em maiúscula para ser reconhecida com o if e o innerHTML fazer a interpolação
+
+            if (np =='BRASIL'){
+                res.innerHTML = `Seu país de origem é <strong>${país.value.toUpperCase()}</strong>, você é <strong>brasileiro</strong>.`;
+            } else {
+                res.innerHTML = `Você nasceu em <strong>${país.value}</strong>, logo, és <strong>ESTRANGEIRO</strong>.`;
+            }
         }
     </script>
+
 </body>
 </html>
