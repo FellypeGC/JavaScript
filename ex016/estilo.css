@@ -18,8 +18,22 @@ section {
 }
 
 div {
-    text-align: center;
+    /*text-align: center;*/
     padding: .5rem;
+}
+
+#botao {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.btn {
+    padding: 4px 18px;
+    color: white;
+    background: #4040E6;
+    border: none;
+    border-radius: 20px;
 }
 
 footer {

@@ -3,31 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo de Exercício</title>
+    <title>Super Contador</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <header>
-        <h1>Verificador de Imagem</h1>
+        <h1>Vamos contar</h1>
     </header>
 
     <section>
-        <div id="msg">
-            <p>Ano de Nascimento:
-                <input type="number" name="txtano" id="txtano" min="0">
-            </p>
-            <p> Sexo: 
-                <input type="radio" name="radsex" id="masc" checked>
-                <label for="masc">Masculino</label>
-                <input type="radio" name="radsex" id="fem">
-                <label for="fem">Feminino</label>
-            </p>
-            <p>
-                <input type="button" value="Verificador" onclick="verificar()">
-            </p>
+        <div id="dados">
+            <p>Início: <input type="number" name="inicio" id="txti"></p>
+            <p>Fim: <input type="number" name="fim" id="txtf"></p>
+            <p>Passo: <input type="number" name="passo" id="txtp"></p>
+
+            <p id="botao"><input class="btn" type="button" value="Contar" onclick="contar()"></p>
         </div>
         <div id="res">
-            Preencha acima para ver o resultado!
+            Preparando a contagem...
         </div> 
     </section>
 
