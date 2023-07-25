@@ -11,7 +11,6 @@ function isNumero(n) {
     }
 }
 
-
 function inLista(n, l) {
     if (l.indexOf(Number(n)) != -1) {
         return true
@@ -19,7 +18,6 @@ function inLista(n, l) {
         return false
     }
 }
-
 
 function adicionar() {
     if(isNumero(num.value) && !inLista(num.value, valores)) {
