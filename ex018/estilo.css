@@ -23,13 +23,41 @@ section {
 }
 
 div {
-    /* text-align: center; */
+    text-align: center; 
     padding: .5rem;
+}
+
+#campos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+select, input {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.btn {
+    padding: 4px 17px;
+    border-radius: 20px;
+    border: none;
+    background: rgb(64, 64, 230);
+    color: #FFF;
+}
+
+#btn {
+    padding: 4px 17px;
+    border-radius: 20px;
+    border: none;
+    background: rgb(64, 64, 230);
+    color: #FFF;
+    margin-top: -.4rem;
 }
 
 footer {
     color: white;
     text-align: center;
     font-style: italic;
-    
 }
